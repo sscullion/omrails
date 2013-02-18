@@ -1,7 +1,7 @@
 <div class="row">
 	<div class="span6 offset3">
 		<div class="well">
-			<%= image_tag @pin.image %>
+			<%= image_tag @pin.image.url(:medium) %>
 			<p>
 			  <%= @pin.description %>
 			</p>

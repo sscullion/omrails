@@ -20,5 +20,8 @@ doc/
 .DS_Store
 .idea
 
+# Ignore paperclip AWS s3 config file
+/config/s3.yml
+
 # Ignore Paperclip uploaded files
 /public/system
