@@ -1,14 +1,14 @@
 <div class="row">
 	<div class="span6 offset3">
 		<div class="well">
-			<%= image_tag @pin.image.url(:medium) %>
+			<%= image_tag @pin.image.url(:large), class: "img-rounded img-polaroid" %>
 			<p>
 			  <%= @pin.image_remote_url %>
 			</p>
-			<p>
-			  <%= @pin.description %>
+			<p class="description">
+				<%= @pin.description %>
 			</p>
-			<p>
+			<p class="description">
 			  <%= @pin.user.name %>
 			</p>
 			<% if current_user == @pin.user %>
