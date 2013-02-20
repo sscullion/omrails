@@ -3,6 +3,9 @@
 		<div class="well">
 			<%= image_tag @pin.image.url(:medium) %>
 			<p>
+			  <%= @pin.image_remote_url %>
+			</p>
+			<p>
 			  <%= @pin.description %>
 			</p>
 			<p>
