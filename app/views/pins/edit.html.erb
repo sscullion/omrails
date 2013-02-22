@@ -1,6 +1,13 @@
 <h1>Editing pin</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @pin %> |
-<%= link_to 'Back', pins_path %>
+<div class="row">
+	<div class="span6 offset3">
+		<div class="well">
+			<%= image_tag @pin.image.url(:large), class: "img-rounded img-polaroid" %>
+			<%= render 'form' %>
+			<% if current_user == @pin.user %>
+				<%= link_to 'Edit', edit_pin_path(@pin) %> |
+				<%= link_to 'Back', pins_path %>
+			<% end %>
+		</div>
+	</div>
+</div>

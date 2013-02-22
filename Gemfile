@@ -7,6 +7,8 @@ gem 'devise'
 gem 'simple_form'
 gem 'paperclip', '~> 3.0'
 gem 'aws-sdk'
+gem 'kaminari'
+gem 'activeadmin'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
