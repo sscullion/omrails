@@ -3,7 +3,9 @@ Omrails::Application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
-  resources :pins
+  resources :pins do
+    get 'page/:page', :action => :index, :on => :collection
+  end
 
 
   devise_for :users

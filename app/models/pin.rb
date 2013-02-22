@@ -3,6 +3,8 @@ require 'timeout'
 
 class Pin < ActiveRecord::Base
 
+  paginates_per 20
+  
   attr_accessor :image_url
   attr_accessible :description, :image,  :image_remote_url, :image_url
 

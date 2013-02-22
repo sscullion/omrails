@@ -19,6 +19,7 @@ end
 
 group :development do
 	gem 'sqlite3'
+	gem 'faker'
 end
 
 # Gems used only for assets and not required
